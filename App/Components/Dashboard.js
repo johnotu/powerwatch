@@ -4,9 +4,20 @@
  */
 
 import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, Button } from 'react-native';
 
 export default class Dashboard extends Component {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: 'WATCH',
+      headerRight: (
+        <Button
+          onPress={() => navigation.navigate("Account")}
+          title='Account'
+        />
+      )
+    };
+  };
   render() {
     return (
       <View style={styles.container}>
