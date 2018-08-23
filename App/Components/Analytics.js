@@ -6,10 +6,10 @@
 import React, { Component } from "react";
 import { Text, View, StyleSheet } from "react-native";
 import { createMaterialTopTabNavigator } from 'react-navigation';
-import Today from './AnalyticsTab/Today';
-import Week from './AnalyticsTab/Week';
-import Month from './AnalyticsTab/Month';
-import Year from './AnalyticsTab/Year';
+import Today from './Analytics/Tabs/Today';
+import Week from './Analytics/Tabs/Week';
+import Month from './Analytics/Tabs/Month';
+import Year from './Analytics/Tabs/Year';
 
 const AnalyticsStack = createMaterialTopTabNavigator({
   Today: Today,
