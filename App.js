@@ -4,23 +4,15 @@
  */
 
 import React, { Component } from 'react';
-import { createStackNavigator, createMaterialTopTabNavigator } from 'react-navigation';
 
-import Dashboard from "./App/Components/Dashboard";
-import Account from "./App/Components/Account";
+import DashboardStack from "./App/Components/Dashboard";
 
 export default class App extends Component {
   render() {
     return (
-      <RootStack />
+      <DashboardStack />
     );
   }
 }
 
-const RootStack = createStackNavigator({
-  Dashboard: Dashboard,
-  Account: Account
-},
-  {
-  initialRouteName: "Dashboard"
-});
+
