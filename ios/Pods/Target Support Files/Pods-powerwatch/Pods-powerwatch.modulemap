@@ -1,0 +1,6 @@
+framework module Pods_powerwatch {
+  umbrella header "Pods-powerwatch-umbrella.h"
+
+  export *
+  module * { export * }
+}

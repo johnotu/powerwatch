@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "sed -i '' 's/#import <RCTAnimation\\/RCTValueAnimatedNode.h>/#import \"RCTValueAnimatedNode.h\"/' ./node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h"
   },
   "dependencies": {
     "react": "16.4.1",
     "react-native": "0.56.0",
+    "react-native-charts-wrapper": "^0.4.4",
     "react-navigation": "^2.11.2"
   },
   "devDependencies": {
